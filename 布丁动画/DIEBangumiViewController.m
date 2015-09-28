@@ -10,6 +10,7 @@
 #import "UIViewController+MMDrawerController.h"
 #import "UIImage+Additions.h"
 #import "WEITitleView.h"
+#import "DIECategoryViewController.h"
 @interface DIEBangumiViewController ()<UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 {
     NSArray *_pageArray;
@@ -87,7 +88,7 @@
 - (void)createPageControllers {
     UIViewController *recommendViewController = [UIViewController new];
     recommendViewController.view.backgroundColor = [UIColor redColor];
-    UIViewController *categoryViewController = [UIViewController new];
+    UIViewController *categoryViewController = [DIECategoryViewController new];
     categoryViewController.view.backgroundColor = [UIColor greenColor];
     //需要显示的页面，当页面比较多的时候，可以考虑动态创建
     _pageArray = @[recommendViewController, categoryViewController];

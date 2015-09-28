@@ -1,0 +1,182 @@
+[
+    {
+        "_id": "541b9347acacae05708b4685",
+        "animeCount": 55,
+        "name": "10月新番",
+        "image": {
+            "height": 307,
+            "width": 317,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/541b9347acacae05708b4685/6421dbbbb51d74df3084d725a855bf15.jpg"
+        }
+    },
+    {
+        "_id": "557563d6e697fa60268b4574",
+        "animeCount": 45,
+        "name": "7月新番",
+        "image": {
+            "height": 348,
+            "width": 345,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/557563d6e697fa60268b4574/95b6f09c4065026e6a3083985e48402b.jpg"
+        }
+    },
+    {
+        "_id": "54f530dbe397fa7e738b4570",
+        "animeCount": 55,
+        "name": "4月新番",
+        "image": {
+            "height": 383,
+            "width": 381,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/54f530dbe397fa7e738b4570/edb45935d574f7c5c2487318749446ee.jpg"
+        }
+    },
+    {
+        "_id": "548920d7e497fabc7c8b45a0",
+        "animeCount": 35,
+        "name": "1月新番",
+        "image": {
+            "height": 451,
+            "width": 612,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/548920d7e497fabc7c8b45a0/81f3c449ea3dd3f9bfff363a9e63761e.jpg"
+        }
+    },
+    {
+        "_id": "5451990de397fa76048b458e",
+        "animeCount": 399,
+        "name": "剧场版",
+        "image": {
+            "height": 553,
+            "width": 493,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/5451990de397fa76048b458e/ea32657a41c1ba808d277f6e82c60602.jpg"
+        }
+    },
+    {
+        "_id": "54221eaaa7f293bc1b8b4674",
+        "animeCount": 320,
+        "name": "国产动画",
+        "image": {
+            "height": 449,
+            "width": 530,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/54221eaaa7f293bc1b8b4674/42e2cbd3c37d95bc3335ff2b80e32102.jpg"
+        }
+    },
+    {
+        "_id": "534e110bacacaecf628b4712",
+        "animeCount": 70,
+        "name": "妹控",
+        "image": {
+            "height": 1200,
+            "width": 1920,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/534e110bacacaecf628b4712/00b6ba0c4456f8faef91b441646b9e6e.jpg"
+        }
+    },
+    {
+        "_id": "534e2c63acacaea9798b471b",
+        "animeCount": 85,
+        "name": "谋略",
+        "image": {
+            "height": 347,
+            "width": 500,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/534e2c63acacaea9798b471b/db233028389ebba31d8ed4c5f39cda19.jpg"
+        }
+    },
+    {
+        "_id": "534e0a93adacae69378b4632",
+        "animeCount": 350,
+        "name": "怀旧",
+        "image": {
+            "height": 578,
+            "width": 781,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/534e0a93adacae69378b4632/0e999c869a2350205f062b5e961eb337.jpg"
+        }
+    },
+    {
+        "_id": "54eeb0d3e597fa291f8b4571",
+        "animeCount": 150,
+        "name": "美漫",
+        "image": {
+            "height": 500,
+            "width": 565,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/54eeb0d3e597fa291f8b4571/f7d0ac07a5dad01f71084a38d7249f7c.jpg"
+        }
+    },
+    {
+        "_id": "54f6bf11e597fa6b038b4569",
+        "animeCount": 25,
+        "name": "真人版",
+        "image": {
+            "height": 855,
+            "width": 1200,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/54f6bf11e597fa6b038b4569/0321f2d669c1ed3f5ecb176a5a069b33.jpg"
+        }
+    },
+    {
+        "_id": "54f57767e497fade1a8b4568",
+        "animeCount": 15,
+        "name": "演唱会",
+        "image": {
+            "height": 1280,
+            "width": 1088,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/54f57767e497fade1a8b4568/8475af15005d42b3d38762d2c92d3e6c.jpg"
+        }
+    },
+    {
+        "_id": "534e1600adacae12418b4594",
+        "animeCount": 120,
+        "name": "泡面番",
+        "image": {
+            "height": 300,
+            "width": 400,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/534e1600adacae12418b4594/5f30cb009f54dfd1a8f7172ccde59d40.jpg"
+        }
+    },
+    {
+        "_id": "533d15c97dfea54b2f8b45c7",
+        "animeCount": 245,
+        "name": "异世界",
+        "image": {
+            "height": 448,
+            "width": 467,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/533d15c97dfea54b2f8b45c7/6f2d94cd4a5154e75e4bc1b73d789a68.jpg"
+        }
+    },
+    {
+        "_id": "534e41f7adacae145e8b4785",
+        "animeCount": 245,
+        "name": "鬼怪",
+        "image": {
+            "height": 668,
+            "width": 609,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/534e41f7adacae145e8b4785/6139f631642f969537da3f3cef113a62.jpg"
+        }
+    },
+    {
+        "_id": "533d259f7dfea54e2f8b4574",
+        "animeCount": 457,
+        "name": "燃",
+        "image": {
+            "height": 480,
+            "width": 640,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/533d259f7dfea54e2f8b4574/5939169204706c31347256603d389412.jpg"
+        }
+    },
+    {
+        "_id": "550bd425e597fa5d718b456f",
+        "animeCount": 35,
+        "name": "布袋戏",
+        "image": {
+            "height": 326,
+            "width": 357,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/550bd425e597fa5d718b456f/470b6ed1b165e7207f95722d51a90433.jpg"
+        }
+    },
+    {
+        "_id": "533d260b7dfea5582f8b4570",
+        "animeCount": 525,
+        "name": "校园",
+        "image": {
+            "height": 578,
+            "width": 617,
+            "url": "http://7d9rdc.com1.z0.glb.clouddn.com/@/category/533d260b7dfea5582f8b4570/219e6442b2ffad83b4cd44dbb8723a7a.jpg"
+        }
+    }
+]
