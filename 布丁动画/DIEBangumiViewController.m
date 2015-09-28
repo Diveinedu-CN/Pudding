@@ -14,6 +14,7 @@
 {
     NSArray *_pageArray;
     NSInteger _currentIndex;
+    WEITitleView *_titleView;
 }
 
 @end
@@ -49,10 +50,10 @@
     leftItemImage = [leftItemImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:leftItemImage style:UIBarButtonItemStylePlain target:self action:@selector(toggleSideBar:)];
-    WEITitleView *titleView = [[WEITitleView alloc]initWithFrame:CGRectMake(0, 0, 120, 44)];
-    [titleView addTarget:self action:@selector(titleViewValueChanged:) forControlEvents:UIControlEventValueChanged];
-    titleView.titleArray = @[@"番组",@"分类"];
-    self.navigationItem.titleView = titleView;
+    _titleView = [[WEITitleView alloc]initWithFrame:CGRectMake(0, 0, 120, 44)];
+    [_titleView addTarget:self action:@selector(titleViewValueChanged:) forControlEvents:UIControlEventValueChanged];
+    _titleView.titleArray = @[@"番组",@"分类"];
+    self.navigationItem.titleView = _titleView;
     
     
     //hack&search the scrollView and observe it.
@@ -120,6 +121,7 @@
 {
     UIViewController *currentViewController = [pageViewController.viewControllers firstObject];
     _currentIndex =  [_pageArray indexOfObject:currentViewController];
+    _titleView.selectedIndex = _currentIndex;
 }
 
 //翻页位置（左、中、右）
