@@ -571,6 +571,23 @@
 		181E5A171BB97D130069DA1D /* DIECategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A161BB97D130069DA1D /* DIECategoryViewController.m */; settings = {ASSET_TAGS = (); }; };
 		181E5A191BB97FA80069DA1D /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 181E5A181BB97FA80069DA1D /* placeholder.png */; settings = {ASSET_TAGS = (); }; };
 		181E5A1D1BBA2A690069DA1D /* DIECategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A1C1BBA2A690069DA1D /* DIECategoryModel.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A441BBA39770069DA1D /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A221BBA39770069DA1D /* EXTRuntimeExtensions.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A451BBA39770069DA1D /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A241BBA39770069DA1D /* EXTScope.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A461BBA39770069DA1D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 181E5A261BBA39770069DA1D /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		181E5A471BBA39770069DA1D /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A291BBA39770069DA1D /* MTLJSONAdapter.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A481BBA39770069DA1D /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A2B1BBA39770069DA1D /* MTLModel+NSCoding.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A491BBA39770069DA1D /* MTLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A2D1BBA39770069DA1D /* MTLModel.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A4A1BBA39770069DA1D /* MTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A2F1BBA39770069DA1D /* MTLReflection.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A4B1BBA39770069DA1D /* MTLTransformerErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A311BBA39770069DA1D /* MTLTransformerErrorHandling.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A4C1BBA39770069DA1D /* MTLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A331BBA39770069DA1D /* MTLValueTransformer.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A4D1BBA39770069DA1D /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A351BBA39770069DA1D /* NSArray+MTLManipulationAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A4E1BBA39770069DA1D /* NSDictionary+MTLJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A371BBA39770069DA1D /* NSDictionary+MTLJSONKeyPath.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A4F1BBA39770069DA1D /* NSDictionary+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A391BBA39770069DA1D /* NSDictionary+MTLManipulationAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A501BBA39770069DA1D /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A3B1BBA39770069DA1D /* NSDictionary+MTLMappingAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A511BBA39770069DA1D /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A3D1BBA39770069DA1D /* NSError+MTLModelException.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A521BBA39770069DA1D /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A3F1BBA39770069DA1D /* NSObject+MTLComparisonAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A531BBA39770069DA1D /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A411BBA39770069DA1D /* NSValueTransformer+MTLInversionAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		181E5A541BBA39770069DA1D /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A431BBA39770069DA1D /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1208,6 +1225,42 @@
 		181E5A181BB97FA80069DA1D /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		181E5A1B1BBA2A690069DA1D /* DIECategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIECategoryModel.h; sourceTree = "<group>"; };
 		181E5A1C1BBA2A690069DA1D /* DIECategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIECategoryModel.m; sourceTree = "<group>"; };
+		181E5A201BBA39770069DA1D /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
+		181E5A211BBA39770069DA1D /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		181E5A221BBA39770069DA1D /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		181E5A231BBA39770069DA1D /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		181E5A241BBA39770069DA1D /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
+		181E5A251BBA39770069DA1D /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		181E5A261BBA39770069DA1D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181E5A271BBA39770069DA1D /* Mantle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mantle.h; sourceTree = "<group>"; };
+		181E5A281BBA39770069DA1D /* MTLJSONAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLJSONAdapter.h; sourceTree = "<group>"; };
+		181E5A291BBA39770069DA1D /* MTLJSONAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLJSONAdapter.m; sourceTree = "<group>"; };
+		181E5A2A1BBA39770069DA1D /* MTLModel+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLModel+NSCoding.h"; sourceTree = "<group>"; };
+		181E5A2B1BBA39770069DA1D /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLModel+NSCoding.m"; sourceTree = "<group>"; };
+		181E5A2C1BBA39770069DA1D /* MTLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLModel.h; sourceTree = "<group>"; };
+		181E5A2D1BBA39770069DA1D /* MTLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLModel.m; sourceTree = "<group>"; };
+		181E5A2E1BBA39770069DA1D /* MTLReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLReflection.h; sourceTree = "<group>"; };
+		181E5A2F1BBA39770069DA1D /* MTLReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLReflection.m; sourceTree = "<group>"; };
+		181E5A301BBA39770069DA1D /* MTLTransformerErrorHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLTransformerErrorHandling.h; sourceTree = "<group>"; };
+		181E5A311BBA39770069DA1D /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
+		181E5A321BBA39770069DA1D /* MTLValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLValueTransformer.h; sourceTree = "<group>"; };
+		181E5A331BBA39770069DA1D /* MTLValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLValueTransformer.m; sourceTree = "<group>"; };
+		181E5A341BBA39770069DA1D /* NSArray+MTLManipulationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
+		181E5A351BBA39770069DA1D /* NSArray+MTLManipulationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
+		181E5A361BBA39770069DA1D /* NSDictionary+MTLJSONKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MTLJSONKeyPath.h"; sourceTree = "<group>"; };
+		181E5A371BBA39770069DA1D /* NSDictionary+MTLJSONKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MTLJSONKeyPath.m"; sourceTree = "<group>"; };
+		181E5A381BBA39770069DA1D /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
+		181E5A391BBA39770069DA1D /* NSDictionary+MTLManipulationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
+		181E5A3A1BBA39770069DA1D /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
+		181E5A3B1BBA39770069DA1D /* NSDictionary+MTLMappingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MTLMappingAdditions.m"; sourceTree = "<group>"; };
+		181E5A3C1BBA39770069DA1D /* NSError+MTLModelException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+MTLModelException.h"; sourceTree = "<group>"; };
+		181E5A3D1BBA39770069DA1D /* NSError+MTLModelException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+MTLModelException.m"; sourceTree = "<group>"; };
+		181E5A3E1BBA39770069DA1D /* NSObject+MTLComparisonAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTLComparisonAdditions.h"; sourceTree = "<group>"; };
+		181E5A3F1BBA39770069DA1D /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
+		181E5A401BBA39770069DA1D /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
+		181E5A411BBA39770069DA1D /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
+		181E5A421BBA39770069DA1D /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
+		181E5A431BBA39770069DA1D /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1316,6 +1369,7 @@
 		181E54671BAFE7D60069DA1D /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				181E5A1E1BBA39770069DA1D /* Mantle */,
 				181E59DE1BB97C600069DA1D /* SDWebImage */,
 				181E596E1BB977DA0069DA1D /* UIImage-Additions */,
 				181E59481BB977CE0069DA1D /* Masonry */,
@@ -1970,6 +2024,57 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		181E5A1E1BBA39770069DA1D /* Mantle */ = {
+			isa = PBXGroup;
+			children = (
+				181E5A1F1BBA39770069DA1D /* extobjc */,
+				181E5A261BBA39770069DA1D /* Info.plist */,
+				181E5A271BBA39770069DA1D /* Mantle.h */,
+				181E5A281BBA39770069DA1D /* MTLJSONAdapter.h */,
+				181E5A291BBA39770069DA1D /* MTLJSONAdapter.m */,
+				181E5A2A1BBA39770069DA1D /* MTLModel+NSCoding.h */,
+				181E5A2B1BBA39770069DA1D /* MTLModel+NSCoding.m */,
+				181E5A2C1BBA39770069DA1D /* MTLModel.h */,
+				181E5A2D1BBA39770069DA1D /* MTLModel.m */,
+				181E5A2E1BBA39770069DA1D /* MTLReflection.h */,
+				181E5A2F1BBA39770069DA1D /* MTLReflection.m */,
+				181E5A301BBA39770069DA1D /* MTLTransformerErrorHandling.h */,
+				181E5A311BBA39770069DA1D /* MTLTransformerErrorHandling.m */,
+				181E5A321BBA39770069DA1D /* MTLValueTransformer.h */,
+				181E5A331BBA39770069DA1D /* MTLValueTransformer.m */,
+				181E5A341BBA39770069DA1D /* NSArray+MTLManipulationAdditions.h */,
+				181E5A351BBA39770069DA1D /* NSArray+MTLManipulationAdditions.m */,
+				181E5A361BBA39770069DA1D /* NSDictionary+MTLJSONKeyPath.h */,
+				181E5A371BBA39770069DA1D /* NSDictionary+MTLJSONKeyPath.m */,
+				181E5A381BBA39770069DA1D /* NSDictionary+MTLManipulationAdditions.h */,
+				181E5A391BBA39770069DA1D /* NSDictionary+MTLManipulationAdditions.m */,
+				181E5A3A1BBA39770069DA1D /* NSDictionary+MTLMappingAdditions.h */,
+				181E5A3B1BBA39770069DA1D /* NSDictionary+MTLMappingAdditions.m */,
+				181E5A3C1BBA39770069DA1D /* NSError+MTLModelException.h */,
+				181E5A3D1BBA39770069DA1D /* NSError+MTLModelException.m */,
+				181E5A3E1BBA39770069DA1D /* NSObject+MTLComparisonAdditions.h */,
+				181E5A3F1BBA39770069DA1D /* NSObject+MTLComparisonAdditions.m */,
+				181E5A401BBA39770069DA1D /* NSValueTransformer+MTLInversionAdditions.h */,
+				181E5A411BBA39770069DA1D /* NSValueTransformer+MTLInversionAdditions.m */,
+				181E5A421BBA39770069DA1D /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */,
+				181E5A431BBA39770069DA1D /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */,
+			);
+			path = Mantle;
+			sourceTree = "<group>";
+		};
+		181E5A1F1BBA39770069DA1D /* extobjc */ = {
+			isa = PBXGroup;
+			children = (
+				181E5A201BBA39770069DA1D /* EXTKeyPathCoding.h */,
+				181E5A211BBA39770069DA1D /* EXTRuntimeExtensions.h */,
+				181E5A221BBA39770069DA1D /* EXTRuntimeExtensions.m */,
+				181E5A231BBA39770069DA1D /* EXTScope.h */,
+				181E5A241BBA39770069DA1D /* EXTScope.m */,
+				181E5A251BBA39770069DA1D /* metamacros.h */,
+			);
+			path = extobjc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2147,6 +2252,7 @@
 				181E56F71BAFEE6D0069DA1D /* ep_source_dm530~iphone.png in Resources */,
 				181E577A1BAFEE6D0069DA1D /* home_album_indicator~iphone.png in Resources */,
 				181E575E1BAFEE6D0069DA1D /* global_share_icon_weixin_timeline~iphone.png in Resources */,
+				181E5A461BBA39770069DA1D /* Info.plist in Resources */,
 				181E582F1BAFEE6D0069DA1D /* timeline_login_icon_weibo~iphone.png in Resources */,
 				181E56BB1BAFEE6D0069DA1D /* cyber_list_icon_voice_l~iphone.png in Resources */,
 				181E580F1BAFEE6D0069DA1D /* timeline_btn_followed~iphone.png in Resources */,
@@ -2623,38 +2729,54 @@
 				181E59711BB977DA0069DA1D /* UIImage+Additions.m in Sources */,
 				181E54631BAFE6260069DA1D /* DIEBangumiViewController.m in Sources */,
 				181E5A141BB97D010069DA1D /* DIECategoryCell.m in Sources */,
+				181E5A4C1BBA39770069DA1D /* MTLValueTransformer.m in Sources */,
 				181E596B1BB977CE0069DA1D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				181E59691BB977CE0069DA1D /* MASViewConstraint.m in Sources */,
 				181E5A091BB97C600069DA1D /* UIButton+WebCache.m in Sources */,
 				181E54721BAFE7D60069DA1D /* MMDrawerBarButtonItem.m in Sources */,
 				181E5A0B1BB97C600069DA1D /* UIImage+MultiFormat.m in Sources */,
+				181E5A441BBA39770069DA1D /* EXTRuntimeExtensions.m in Sources */,
 				181E596C1BB977CE0069DA1D /* View+MASAdditions.m in Sources */,
+				181E5A481BBA39770069DA1D /* MTLModel+NSCoding.m in Sources */,
 				181E5A041BB97C600069DA1D /* SDWebImageDecoder.m in Sources */,
 				181E54751BAFE7D60069DA1D /* UIViewController+MMDrawerController.m in Sources */,
 				181E5A171BB97D130069DA1D /* DIECategoryViewController.m in Sources */,
 				181E5A0E1BB97C600069DA1D /* UIImageView+WebCache.m in Sources */,
+				181E5A531BBA39770069DA1D /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
 				181E59681BB977CE0069DA1D /* MASViewAttribute.m in Sources */,
 				181E59661BB977CE0069DA1D /* MASConstraintMaker.m in Sources */,
+				181E5A491BBA39770069DA1D /* MTLModel.m in Sources */,
+				181E5A4D1BBA39770069DA1D /* NSArray+MTLManipulationAdditions.m in Sources */,
 				181E5A011BB97C600069DA1D /* NSData+ImageContentType.m in Sources */,
+				181E5A471BBA39770069DA1D /* MTLJSONAdapter.m in Sources */,
 				181E5A051BB97C600069DA1D /* SDWebImageDownloader.m in Sources */,
 				181E58AE1BB0DE430069DA1D /* LeftUserInfoView.m in Sources */,
 				181E542F1BAFE41D0069DA1D /* main.m in Sources */,
 				181E5A0D1BB97C600069DA1D /* UIImageView+HighlightedWebCache.m in Sources */,
+				181E5A541BBA39770069DA1D /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
 				181E596D1BB977CE0069DA1D /* ViewController+MASAdditions.m in Sources */,
+				181E5A4F1BBA39770069DA1D /* NSDictionary+MTLManipulationAdditions.m in Sources */,
 				181E58F61BB4D6E60069DA1D /* WEITitleView.m in Sources */,
+				181E5A4A1BBA39770069DA1D /* MTLReflection.m in Sources */,
 				181E596A1BB977CE0069DA1D /* NSArray+MASAdditions.m in Sources */,
 				181E5A1D1BBA2A690069DA1D /* DIECategoryModel.m in Sources */,
 				181E58821BAFFB180069DA1D /* LeftTableViewCell.m in Sources */,
+				181E5A451BBA39770069DA1D /* EXTScope.m in Sources */,
 				181E5A0F1BB97C600069DA1D /* UIView+WebCacheOperation.m in Sources */,
 				181E5A031BB97C600069DA1D /* SDWebImageCompat.m in Sources */,
 				181E59671BB977CE0069DA1D /* MASLayoutConstraint.m in Sources */,
+				181E5A521BBA39770069DA1D /* NSObject+MTLComparisonAdditions.m in Sources */,
 				181E5A001BB97C600069DA1D /* MKAnnotationView+WebCache.m in Sources */,
+				181E5A4E1BBA39770069DA1D /* NSDictionary+MTLJSONKeyPath.m in Sources */,
 				181E59641BB977CE0069DA1D /* MASCompositeConstraint.m in Sources */,
 				181E54731BAFE7D60069DA1D /* MMDrawerController.m in Sources */,
+				181E5A4B1BBA39770069DA1D /* MTLTransformerErrorHandling.m in Sources */,
 				181E5A081BB97C600069DA1D /* SDWebImagePrefetcher.m in Sources */,
 				181E54661BAFE63D0069DA1D /* DIELeftViewController.m in Sources */,
 				181E5A061BB97C600069DA1D /* SDWebImageDownloaderOperation.m in Sources */,
+				181E5A501BBA39770069DA1D /* NSDictionary+MTLMappingAdditions.m in Sources */,
 				181E54741BAFE7D60069DA1D /* MMDrawerVisualState.m in Sources */,
+				181E5A511BBA39770069DA1D /* NSError+MTLModelException.m in Sources */,
 				181E5A071BB97C600069DA1D /* SDWebImageManager.m in Sources */,
 				181E5A0C1BB97C600069DA1D /* UIImage+WebP.m in Sources */,
 				181E59651BB977CE0069DA1D /* MASConstraint.m in Sources */,
