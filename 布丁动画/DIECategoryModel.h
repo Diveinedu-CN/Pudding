@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 @interface DIECategoryModel : NSObject
 @property (nonatomic,copy) NSString *categoryId;
 @property (nonatomic,assign) NSInteger animeCount;
