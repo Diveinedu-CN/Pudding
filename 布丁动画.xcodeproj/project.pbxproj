@@ -570,6 +570,7 @@
 		181E5A141BB97D010069DA1D /* DIECategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A131BB97D010069DA1D /* DIECategoryCell.m */; settings = {ASSET_TAGS = (); }; };
 		181E5A171BB97D130069DA1D /* DIECategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A161BB97D130069DA1D /* DIECategoryViewController.m */; settings = {ASSET_TAGS = (); }; };
 		181E5A191BB97FA80069DA1D /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 181E5A181BB97FA80069DA1D /* placeholder.png */; settings = {ASSET_TAGS = (); }; };
+		181E5A1D1BBA2A690069DA1D /* DIECategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5A1C1BBA2A690069DA1D /* DIECategoryModel.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1205,6 +1206,8 @@
 		181E5A151BB97D130069DA1D /* DIECategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIECategoryViewController.h; sourceTree = "<group>"; };
 		181E5A161BB97D130069DA1D /* DIECategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIECategoryViewController.m; sourceTree = "<group>"; };
 		181E5A181BB97FA80069DA1D /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		181E5A1B1BBA2A690069DA1D /* DIECategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIECategoryModel.h; sourceTree = "<group>"; };
+		181E5A1C1BBA2A690069DA1D /* DIECategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIECategoryModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1255,6 +1258,7 @@
 		181E542C1BAFE41D0069DA1D /* 布丁动画 */ = {
 			isa = PBXGroup;
 			children = (
+				181E5A1A1BBA29B40069DA1D /* Model */,
 				181E587F1BAFFAC70069DA1D /* View */,
 				181E54671BAFE7D60069DA1D /* Library */,
 				181E54601BAFE5E60069DA1D /* ViewController */,
@@ -1957,6 +1961,15 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		181E5A1A1BBA29B40069DA1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				181E5A1B1BBA2A690069DA1D /* DIECategoryModel.h */,
+				181E5A1C1BBA2A690069DA1D /* DIECategoryModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2630,6 +2643,7 @@
 				181E596D1BB977CE0069DA1D /* ViewController+MASAdditions.m in Sources */,
 				181E58F61BB4D6E60069DA1D /* WEITitleView.m in Sources */,
 				181E596A1BB977CE0069DA1D /* NSArray+MASAdditions.m in Sources */,
+				181E5A1D1BBA2A690069DA1D /* DIECategoryModel.m in Sources */,
 				181E58821BAFFB180069DA1D /* LeftTableViewCell.m in Sources */,
 				181E5A0F1BB97C600069DA1D /* UIView+WebCacheOperation.m in Sources */,
 				181E5A031BB97C600069DA1D /* SDWebImageCompat.m in Sources */,

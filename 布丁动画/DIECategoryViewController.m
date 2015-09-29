@@ -9,12 +9,13 @@
 #import "DIECategoryViewController.h"
 #import "DIECategoryCell.h"
 #import "UIImageView+WebCache.h"
+#import "DIECategoryModel.h"
 const static CGFloat kMinimumInteritemSpacing = 10.f;
 const static CGFloat kMinimumLineSpacing = 0.f;
 @interface DIECategoryViewController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
     UICollectionView *_categoryCollectionView;
-    NSArray *_categoryInfoArray;
+    NSArray<DIECategoryModel *> *_categoryInfoArray;
 }
 @end
 
@@ -50,7 +51,7 @@ const static CGFloat kMinimumLineSpacing = 0.f;
     NSData *categoryData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"category" ofType:@"json"]];
     id info = [NSJSONSerialization JSONObjectWithData:categoryData options:NSJSONReadingAllowFragments error:nil];
     if ([info isKindOfClass:[NSArray class]]) {
-        _categoryInfoArray = info;
+        _categoryInfoArray = [DIECategoryModel modelsFromJSONArray:info];
     }else{
         _categoryInfoArray = @[];
     }
@@ -81,10 +82,10 @@ const static CGFloat kMinimumLineSpacing = 0.f;
 {
     DIECategoryCell *cell;
     cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    NSDictionary *cellInfo = _categoryInfoArray[indexPath.item];
-    NSURL *imgURL = [NSURL URLWithString:cellInfo[@"image"][@"url"]];
-    [cell.imageView sd_setImageWithURL:imgURL placeholderImage:[UIImage imageNamed:@"placeholder"]];
-    cell.textLabel.text = cellInfo[@"name"];
+    DIECategoryModel *cellModel = _categoryInfoArray[indexPath.item];
+
+    [cell.imageView sd_setImageWithURL:cellModel.url placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    cell.textLabel.text = cellModel.name;
     return cell;
 }
 
