@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@interface DIECategoryModel : NSObject
+#import "Mantle.h"
+@interface DIECategoryModel : MTLModel <MTLJSONSerializing>
 @property (nonatomic,copy) NSString *categoryId;
 @property (nonatomic,assign) NSInteger animeCount;
 @property (nonatomic,copy) NSString *name;
@@ -16,11 +17,7 @@
 @property (nonatomic,copy) NSURL *url;
 
 
-- (instancetype)initWithJSONDictionary:(NSDictionary *)dictionary;
-+ (instancetype)modelFromJSONDictionary:(NSDictionary *)dictionary;
 
-- (NSDictionary *)JSONDictionary;
-
-+ (NSArray *)modelsFromJSONArray:(NSArray *)array;
-
++ (instancetype)modelWithDict:(NSDictionary *)dict;
++ (NSArray *)modelsWithArray:(NSArray *)array;
 @end

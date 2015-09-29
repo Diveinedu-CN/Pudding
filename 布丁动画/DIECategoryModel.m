@@ -7,53 +7,32 @@
 //
 
 #import "DIECategoryModel.h"
-NSString * const kCategoryId = @"_id";
-NSString * const kCategoryAnimeCount = @"animeCount";
-NSString * const kCategoryName = @"name";
 
-NSString * const kCategoryImage = @"image";
-NSString * const kCategoryImageWidth = @"width";
-NSString * const kCategoryImageHeight = @"height";
-NSString * const kCategoryImageUrl = @"url";
 @implementation DIECategoryModel
 
-- (instancetype)initWithJSONDictionary:(NSDictionary *)dictionary
+
+
+
+#pragma  mark MTLJSONSerializing
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    if (self = [super init]) {
-        _categoryId = dictionary[kCategoryId];
-        _animeCount = [dictionary[kCategoryAnimeCount] integerValue];
-        _name = dictionary[kCategoryName];
-        NSDictionary *imageDic = dictionary[kCategoryImage];
-        _height = [imageDic[kCategoryImageHeight] integerValue];
-        _width = [imageDic[kCategoryImageWidth] integerValue];
-        _url = [NSURL URLWithString:imageDic[kCategoryImageUrl]];
-    }
-    return self;
+    //头文件中定义的属性  < : > JSON字典中的key
+    return @{
+             @"categoryId":   @"_id",
+             @"name":  @"name",
+             @"animeCount": @"animeCount",
+             @"width":@"image.width",
+             @"height":@"image.height",
+             @"url":@"image.url"
+             };
 }
 
-+ (instancetype)modelFromJSONDictionary:(NSDictionary *)dictionary
-{
-    return [[self alloc] initWithJSONDictionary:dictionary];
+#pragma mark Utility methods
++ (instancetype)modelWithDict:(NSDictionary *)dict {
+    return [MTLJSONAdapter modelOfClass:[self class] fromJSONDictionary:dict error:nil];
+}
++ (NSArray *)modelsWithArray:(NSArray *)array {
+    return [MTLJSONAdapter modelsOfClass:[self class] fromJSONArray:array error:nil];
 }
 
-- (NSDictionary *)JSONDictionary
-{
-    return @{kCategoryId:_categoryId,
-             kCategoryAnimeCount:@(_animeCount),
-             kCategoryName:_name,
-             kCategoryImage:@{
-                     kCategoryImageWidth:@(_width),
-                     kCategoryImageHeight:@(_height),
-                     kCategoryImageUrl:_url.absoluteString
-                     }};
-}
-
-+ (NSArray *)modelsFromJSONArray:(NSArray *)array
-{
-    NSMutableArray *modelArray = [NSMutableArray arrayWithCapacity:[array count]];
-    for (NSDictionary *dic in array) {
-        [modelArray addObject:[self modelFromJSONDictionary:dic]];
-    }
-    return [modelArray copy];
-}
 @end

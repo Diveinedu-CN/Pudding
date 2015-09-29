@@ -51,7 +51,7 @@ const static CGFloat kMinimumLineSpacing = 0.f;
     NSData *categoryData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"category" ofType:@"json"]];
     id info = [NSJSONSerialization JSONObjectWithData:categoryData options:NSJSONReadingAllowFragments error:nil];
     if ([info isKindOfClass:[NSArray class]]) {
-        _categoryInfoArray = [DIECategoryModel modelsFromJSONArray:info];
+        _categoryInfoArray =  [DIECategoryModel modelsWithArray:info];
     }else{
         _categoryInfoArray = @[];
     }
