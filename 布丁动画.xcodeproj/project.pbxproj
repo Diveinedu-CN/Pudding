@@ -597,6 +597,12 @@
 		1864828E1BBB74950003CF60 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482831BBB74950003CF60 /* AFURLRequestSerialization.m */; settings = {ASSET_TAGS = (); }; };
 		1864828F1BBB74950003CF60 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482851BBB74950003CF60 /* AFURLResponseSerialization.m */; settings = {ASSET_TAGS = (); }; };
 		186482901BBB74950003CF60 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482871BBB74950003CF60 /* AFURLSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+		186482961BBB762C0003CF60 /* DIEToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482951BBB762C0003CF60 /* DIEToolKit.m */; settings = {ASSET_TAGS = (); }; };
+		186482991BBB76690003CF60 /* DIEError.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482981BBB76690003CF60 /* DIEError.m */; settings = {ASSET_TAGS = (); }; };
+		1864829C1BBB767B0003CF60 /* DIEApiConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864829B1BBB767B0003CF60 /* DIEApiConfig.m */; settings = {ASSET_TAGS = (); }; };
+		1864829F1BBB769F0003CF60 /* DIENotificationConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864829E1BBB769F0003CF60 /* DIENotificationConfig.m */; settings = {ASSET_TAGS = (); }; };
+		186482A41BBB7F4B0003CF60 /* DIEDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482A31BBB7F4B0003CF60 /* DIEDataManager.m */; settings = {ASSET_TAGS = (); }; };
+		186482A71BBB7F5E0003CF60 /* DIENetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482A61BBB7F5E0003CF60 /* DIENetworkManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1289,6 +1295,18 @@
 		186482851BBB74950003CF60 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		186482861BBB74950003CF60 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		186482871BBB74950003CF60 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		186482941BBB762C0003CF60 /* DIEToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEToolKit.h; sourceTree = "<group>"; };
+		186482951BBB762C0003CF60 /* DIEToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEToolKit.m; sourceTree = "<group>"; };
+		186482971BBB76690003CF60 /* DIEError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEError.h; sourceTree = "<group>"; };
+		186482981BBB76690003CF60 /* DIEError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEError.m; sourceTree = "<group>"; };
+		1864829A1BBB767B0003CF60 /* DIEApiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEApiConfig.h; sourceTree = "<group>"; };
+		1864829B1BBB767B0003CF60 /* DIEApiConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEApiConfig.m; sourceTree = "<group>"; };
+		1864829D1BBB769F0003CF60 /* DIENotificationConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIENotificationConfig.h; sourceTree = "<group>"; };
+		1864829E1BBB769F0003CF60 /* DIENotificationConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIENotificationConfig.m; sourceTree = "<group>"; };
+		186482A21BBB7F4B0003CF60 /* DIEDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEDataManager.h; sourceTree = "<group>"; };
+		186482A31BBB7F4B0003CF60 /* DIEDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEDataManager.m; sourceTree = "<group>"; };
+		186482A51BBB7F5E0003CF60 /* DIENetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIENetworkManager.h; sourceTree = "<group>"; };
+		186482A61BBB7F5E0003CF60 /* DIENetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIENetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1339,6 +1357,8 @@
 		181E542C1BAFE41D0069DA1D /* 布丁动画 */ = {
 			isa = PBXGroup;
 			children = (
+				186482A11BBB7F300003CF60 /* Manager */,
+				186482911BBB75990003CF60 /* Utils */,
 				181E5A1A1BBA29B40069DA1D /* Model */,
 				181E587F1BAFFAC70069DA1D /* View */,
 				181E54671BAFE7D60069DA1D /* Library */,
@@ -2130,6 +2150,32 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		186482911BBB75990003CF60 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				186482941BBB762C0003CF60 /* DIEToolKit.h */,
+				186482951BBB762C0003CF60 /* DIEToolKit.m */,
+				186482971BBB76690003CF60 /* DIEError.h */,
+				186482981BBB76690003CF60 /* DIEError.m */,
+				1864829A1BBB767B0003CF60 /* DIEApiConfig.h */,
+				1864829B1BBB767B0003CF60 /* DIEApiConfig.m */,
+				1864829D1BBB769F0003CF60 /* DIENotificationConfig.h */,
+				1864829E1BBB769F0003CF60 /* DIENotificationConfig.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		186482A11BBB7F300003CF60 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				186482A21BBB7F4B0003CF60 /* DIEDataManager.h */,
+				186482A31BBB7F4B0003CF60 /* DIEDataManager.m */,
+				186482A51BBB7F5E0003CF60 /* DIENetworkManager.h */,
+				186482A61BBB7F5E0003CF60 /* DIENetworkManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2780,16 +2826,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				181E5A0A1BB97C600069DA1D /* UIImage+GIF.m in Sources */,
+				186482991BBB76690003CF60 /* DIEError.m in Sources */,
 				181E54321BAFE41D0069DA1D /* AppDelegate.m in Sources */,
 				181E59711BB977DA0069DA1D /* UIImage+Additions.m in Sources */,
 				181E54631BAFE6260069DA1D /* DIEBangumiViewController.m in Sources */,
 				181E5A141BB97D010069DA1D /* DIECategoryCell.m in Sources */,
+				186482961BBB762C0003CF60 /* DIEToolKit.m in Sources */,
 				1864828B1BBB74950003CF60 /* AFNetworkReachabilityManager.m in Sources */,
 				181E5A4C1BBA39770069DA1D /* MTLValueTransformer.m in Sources */,
 				181E596B1BB977CE0069DA1D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				181E59691BB977CE0069DA1D /* MASViewConstraint.m in Sources */,
 				186482881BBB74950003CF60 /* AFHTTPRequestOperation.m in Sources */,
 				181E5A091BB97C600069DA1D /* UIButton+WebCache.m in Sources */,
+				186482A71BBB7F5E0003CF60 /* DIENetworkManager.m in Sources */,
 				181E54721BAFE7D60069DA1D /* MMDrawerBarButtonItem.m in Sources */,
 				181E5A0B1BB97C600069DA1D /* UIImage+MultiFormat.m in Sources */,
 				186482891BBB74950003CF60 /* AFHTTPRequestOperationManager.m in Sources */,
@@ -2806,6 +2855,7 @@
 				181E59661BB977CE0069DA1D /* MASConstraintMaker.m in Sources */,
 				181E5A491BBA39770069DA1D /* MTLModel.m in Sources */,
 				181E5A4D1BBA39770069DA1D /* NSArray+MTLManipulationAdditions.m in Sources */,
+				1864829C1BBB767B0003CF60 /* DIEApiConfig.m in Sources */,
 				181E5A011BB97C600069DA1D /* NSData+ImageContentType.m in Sources */,
 				181E5A471BBA39770069DA1D /* MTLJSONAdapter.m in Sources */,
 				1864828A1BBB74950003CF60 /* AFHTTPSessionManager.m in Sources */,
@@ -2817,10 +2867,12 @@
 				181E596D1BB977CE0069DA1D /* ViewController+MASAdditions.m in Sources */,
 				181E5A4F1BBA39770069DA1D /* NSDictionary+MTLManipulationAdditions.m in Sources */,
 				181E58F61BB4D6E60069DA1D /* WEITitleView.m in Sources */,
+				186482A41BBB7F4B0003CF60 /* DIEDataManager.m in Sources */,
 				181E5A4A1BBA39770069DA1D /* MTLReflection.m in Sources */,
 				181E596A1BB977CE0069DA1D /* NSArray+MASAdditions.m in Sources */,
 				181E5A1D1BBA2A690069DA1D /* DIECategoryModel.m in Sources */,
 				181E58821BAFFB180069DA1D /* LeftTableViewCell.m in Sources */,
+				1864829F1BBB769F0003CF60 /* DIENotificationConfig.m in Sources */,
 				181E5A451BBA39770069DA1D /* EXTScope.m in Sources */,
 				1864828C1BBB74950003CF60 /* AFSecurityPolicy.m in Sources */,
 				181E5A0F1BB97C600069DA1D /* UIView+WebCacheOperation.m in Sources */,

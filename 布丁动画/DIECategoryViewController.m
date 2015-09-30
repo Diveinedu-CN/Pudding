@@ -10,12 +10,14 @@
 #import "DIECategoryCell.h"
 #import "UIImageView+WebCache.h"
 #import "DIECategoryModel.h"
+#import "DIEDataManager.h"
+#import "DIENotificationConfig.h"
 const static CGFloat kMinimumInteritemSpacing = 10.f;
 const static CGFloat kMinimumLineSpacing = 0.f;
 @interface DIECategoryViewController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
     UICollectionView *_categoryCollectionView;
-    NSArray<DIECategoryModel *> *_categoryInfoArray;
+//    NSArray<DIECategoryModel *> *_categoryInfoArray;
 }
 @end
 
@@ -41,22 +43,19 @@ const static CGFloat kMinimumLineSpacing = 0.f;
     
     
     [self.view addSubview:_categoryCollectionView];
-    [self parseCategoryInfo];
+    DIEAddObserver(self, @selector(didUpdate:), kDIECategoryUpdateNotif, nil);
+    [[DIEDataManager sharedManager] updateCategory];
 }
 
-#pragma mark parse category infomation array
+- (void)dealloc {
+    DIERemoveObserver(self, kDIECategoryUpdateNotif, nil);
+}
 
-- (void)parseCategoryInfo
+- (void)didUpdate:(id)sender
 {
-    NSData *categoryData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"category" ofType:@"json"]];
-    id info = [NSJSONSerialization JSONObjectWithData:categoryData options:NSJSONReadingAllowFragments error:nil];
-    if ([info isKindOfClass:[NSArray class]]) {
-        _categoryInfoArray =  [DIECategoryModel modelsWithArray:info];
-    }else{
-        _categoryInfoArray = @[];
-    }
     [_categoryCollectionView reloadData];
 }
+
 
 
 #pragma mark UICollectionViewDataSource
@@ -69,7 +68,7 @@ const static CGFloat kMinimumLineSpacing = 0.f;
     NSInteger number;
     switch (section) {
         case 0:
-            number = [_categoryInfoArray count];
+            number = [[DIEDataManager sharedManager].categoriesArray count];
             break;
         default:
             number = 4;
@@ -82,7 +81,7 @@ const static CGFloat kMinimumLineSpacing = 0.f;
 {
     DIECategoryCell *cell;
     cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    DIECategoryModel *cellModel = _categoryInfoArray[indexPath.item];
+    DIECategoryModel *cellModel = [DIEDataManager sharedManager].categoriesArray[indexPath.item];
 
     [cell.imageView sd_setImageWithURL:cellModel.url placeholderImage:[UIImage imageNamed:@"placeholder"]];
     cell.textLabel.text = cellModel.name;
