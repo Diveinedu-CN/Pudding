@@ -47,4 +47,10 @@
 + (NSString *)categoryApi {
     return [self apiWithPath:kDIECategoryApi];
 }
+
++ (NSString *)animeApiWithCategoryId:(NSString *)categotyId
+{
+    NSString *animePath = [NSString stringWithFormat:kDIEAnimeApi, categotyId];
+    return [self apiWithPath:animePath];
+}
 @end

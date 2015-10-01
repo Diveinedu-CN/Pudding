@@ -29,4 +29,5 @@
 + (NSDictionary *)appParams;
 + (NSDictionary *)fullParams:(NSDictionary *)params;
 + (NSString *)categoryApi;
++ (NSString *)animeApiWithCategoryId:(NSString *)categotyId;
 @end

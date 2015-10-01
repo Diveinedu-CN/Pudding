@@ -12,6 +12,7 @@
 #import "DIECategoryModel.h"
 #import "DIEDataManager.h"
 #import "DIENotificationConfig.h"
+#import "DIEAnimeViewController.h"
 const static CGFloat kMinimumInteritemSpacing = 10.f;
 const static CGFloat kMinimumLineSpacing = 0.f;
 @interface DIECategoryViewController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
@@ -171,5 +172,11 @@ const static CGFloat kMinimumLineSpacing = 0.f;
 {
     DIECategoryCell *cell = (DIECategoryCell *)[collectionView cellForItemAtIndexPath:indexPath];
     NSLog(@"点击了:%@",cell.textLabel.text);
+    NSString *categoryId = [DIEDataManager sharedManager].categoriesArray[indexPath.item].categoryId;
+    DIEAnimeViewController *animeViewController = [DIEAnimeViewController new];
+    animeViewController.categoryId = categoryId;
+    animeViewController.title = cell.textLabel.text;
+    [[DIEDataManager sharedManager].animeArray removeAllObjects];
+    [self.navigationController pushViewController:animeViewController animated:YES];
 }
 @end

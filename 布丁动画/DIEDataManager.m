@@ -33,6 +33,7 @@ static DIEDataManager *instnce;
         _categoryOffset = 0;
         _categoryLimit = 18;
         _categoriesArray = [NSMutableArray new];
+        _animeArray = [NSMutableArray new];
     }
     return self;
 }
@@ -66,6 +67,29 @@ static DIEDataManager *instnce;
     }else{
         return @[];
     }
+}
+
+
+- (void)updateAnimeWithCategoryId:(NSString *)categoryId
+{
+    [DIENetworkManager animeWithCategoryId:categoryId withLimit:20 completion:^(id responseObject, DIEError *error) {
+        NSArray *parsedArray = [self parseAnimeData:responseObject];
+
+        [_animeArray removeAllObjects];
+        [_animeArray addObjectsFromArray:parsedArray];
+        DIEPost(KDIEAnimeUpdateNotif, nil);
+    }];
+}
+
+- (NSArray *)parseAnimeData:(id)animeData
+{
+    if ([animeData isKindOfClass:[NSArray class]]) {
+        NSArray *array =  [DIEAnimeModel modelsFromJSONArray:animeData];
+        return array;
+    }else{
+        return @[];
+    }
+
 }
 @end
 
