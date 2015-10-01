@@ -11,3 +11,4 @@ FOUNDATION_EXTERN NSString * const kDIEHost;
 
 FOUNDATION_EXTERN NSString * const kDIECategoryApi;
 FOUNDATION_EXTERN NSString * const kDIEAnimeApi;
+FOUNDATION_EXTERN NSString * const kDIEAnimeEpisodeApi;

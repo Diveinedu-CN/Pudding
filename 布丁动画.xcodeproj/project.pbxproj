@@ -606,6 +606,10 @@
 		186482B61BBCCC4A0003CF60 /* DIEAnimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482B51BBCCC4A0003CF60 /* DIEAnimeModel.m */; settings = {ASSET_TAGS = (); }; };
 		186482B91BBCD4B10003CF60 /* AnimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482B81BBCD4B10003CF60 /* AnimeTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		186482BC1BBCD99C0003CF60 /* DIEAnimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482BB1BBCD99C0003CF60 /* DIEAnimeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		186482BF1BBD237D0003CF60 /* DIEAnimeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482BE1BBD237D0003CF60 /* DIEAnimeDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		186482C21BBD34600003CF60 /* DIEEpisodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482C11BBD34600003CF60 /* DIEEpisodeModel.m */; settings = {ASSET_TAGS = (); }; };
+		186482C51BBD35080003CF60 /* DIEVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482C41BBD35080003CF60 /* DIEVideoModel.m */; settings = {ASSET_TAGS = (); }; };
+		186482C81BBD53260003CF60 /* DIEAnimeEpisodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482C71BBD53260003CF60 /* DIEAnimeEpisodeViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1316,6 +1320,14 @@
 		186482B81BBCD4B10003CF60 /* AnimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeTableViewCell.m; sourceTree = "<group>"; };
 		186482BA1BBCD99C0003CF60 /* DIEAnimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEAnimeViewController.h; sourceTree = "<group>"; };
 		186482BB1BBCD99C0003CF60 /* DIEAnimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEAnimeViewController.m; sourceTree = "<group>"; };
+		186482BD1BBD237D0003CF60 /* DIEAnimeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEAnimeDetailViewController.h; sourceTree = "<group>"; };
+		186482BE1BBD237D0003CF60 /* DIEAnimeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEAnimeDetailViewController.m; sourceTree = "<group>"; };
+		186482C01BBD34600003CF60 /* DIEEpisodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEEpisodeModel.h; sourceTree = "<group>"; };
+		186482C11BBD34600003CF60 /* DIEEpisodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEEpisodeModel.m; sourceTree = "<group>"; };
+		186482C31BBD35080003CF60 /* DIEVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEVideoModel.h; sourceTree = "<group>"; };
+		186482C41BBD35080003CF60 /* DIEVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEVideoModel.m; sourceTree = "<group>"; };
+		186482C61BBD53260003CF60 /* DIEAnimeEpisodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEAnimeEpisodeViewController.h; sourceTree = "<group>"; };
+		186482C71BBD53260003CF60 /* DIEAnimeEpisodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEAnimeEpisodeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1421,6 +1433,10 @@
 				181E5A161BB97D130069DA1D /* DIECategoryViewController.m */,
 				186482BA1BBCD99C0003CF60 /* DIEAnimeViewController.h */,
 				186482BB1BBCD99C0003CF60 /* DIEAnimeViewController.m */,
+				186482BD1BBD237D0003CF60 /* DIEAnimeDetailViewController.h */,
+				186482BE1BBD237D0003CF60 /* DIEAnimeDetailViewController.m */,
+				186482C61BBD53260003CF60 /* DIEAnimeEpisodeViewController.h */,
+				186482C71BBD53260003CF60 /* DIEAnimeEpisodeViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -2084,6 +2100,10 @@
 				181E5A1C1BBA2A690069DA1D /* DIECategoryModel.m */,
 				186482B41BBCCC4A0003CF60 /* DIEAnimeModel.h */,
 				186482B51BBCCC4A0003CF60 /* DIEAnimeModel.m */,
+				186482C01BBD34600003CF60 /* DIEEpisodeModel.h */,
+				186482C11BBD34600003CF60 /* DIEEpisodeModel.m */,
+				186482C31BBD35080003CF60 /* DIEVideoModel.h */,
+				186482C41BBD35080003CF60 /* DIEVideoModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2851,6 +2871,7 @@
 				181E5A4C1BBA39770069DA1D /* MTLValueTransformer.m in Sources */,
 				181E596B1BB977CE0069DA1D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				181E59691BB977CE0069DA1D /* MASViewConstraint.m in Sources */,
+				186482C21BBD34600003CF60 /* DIEEpisodeModel.m in Sources */,
 				186482881BBB74950003CF60 /* AFHTTPRequestOperation.m in Sources */,
 				181E5A091BB97C600069DA1D /* UIButton+WebCache.m in Sources */,
 				186482A71BBB7F5E0003CF60 /* DIENetworkManager.m in Sources */,
@@ -2867,6 +2888,7 @@
 				181E5A0E1BB97C600069DA1D /* UIImageView+WebCache.m in Sources */,
 				181E5A531BBA39770069DA1D /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
 				181E59681BB977CE0069DA1D /* MASViewAttribute.m in Sources */,
+				186482C51BBD35080003CF60 /* DIEVideoModel.m in Sources */,
 				181E59661BB977CE0069DA1D /* MASConstraintMaker.m in Sources */,
 				181E5A491BBA39770069DA1D /* MTLModel.m in Sources */,
 				181E5A4D1BBA39770069DA1D /* NSArray+MTLManipulationAdditions.m in Sources */,
@@ -2891,6 +2913,8 @@
 				186482BC1BBCD99C0003CF60 /* DIEAnimeViewController.m in Sources */,
 				1864829F1BBB769F0003CF60 /* DIENotificationConfig.m in Sources */,
 				181E5A451BBA39770069DA1D /* EXTScope.m in Sources */,
+				186482BF1BBD237D0003CF60 /* DIEAnimeDetailViewController.m in Sources */,
+				186482C81BBD53260003CF60 /* DIEAnimeEpisodeViewController.m in Sources */,
 				1864828C1BBB74950003CF60 /* AFSecurityPolicy.m in Sources */,
 				181E5A0F1BB97C600069DA1D /* UIView+WebCacheOperation.m in Sources */,
 				1864828F1BBB74950003CF60 /* AFURLResponseSerialization.m in Sources */,

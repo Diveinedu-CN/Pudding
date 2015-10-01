@@ -77,7 +77,7 @@ static DIEDataManager *instnce;
 
         [_animeArray removeAllObjects];
         [_animeArray addObjectsFromArray:parsedArray];
-        DIEPost(KDIEAnimeUpdateNotif, nil);
+        DIEPost(kDIEAnimeUpdateNotif, nil);
     }];
 }
 
@@ -90,6 +90,22 @@ static DIEDataManager *instnce;
         return @[];
     }
 
+}
+
+- (void)updateAnimeEpisodeWithAnimeId:(NSString *)animeId andEpisodeId:(NSInteger)episodeId
+{
+    [DIENetworkManager animeEpisodeWithAnimeId:animeId withEpisodeId:episodeId completion:^(id responseObject, DIEError *error) {
+        DIEEpisodeModel *episodeModel = [self parseAnimeEpisodeData:responseObject];
+        DIEPost(kDIEAnimeEpisodeUpdateNotif, episodeModel);
+    }];
+}
+- (DIEEpisodeModel *)parseAnimeEpisodeData:(id)episodeData
+{
+    DIEEpisodeModel *episodeModel;
+    if ([episodeData isKindOfClass:[NSDictionary class]]) {
+        episodeModel = [DIEEpisodeModel modelFromJSONDictionary:episodeData];
+    }
+    return episodeModel;
 }
 @end
 

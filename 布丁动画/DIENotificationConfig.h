@@ -15,4 +15,5 @@
 #define DIERemoveObserver(observer, n, obj) [[NSNotificationCenter defaultCenter] removeObserver:observer name:n object:obj]
 
 FOUNDATION_EXTERN NSString * const kDIECategoryUpdateNotif;
-FOUNDATION_EXTERN NSString * const KDIEAnimeUpdateNotif;
+FOUNDATION_EXTERN NSString * const kDIEAnimeUpdateNotif;
+FOUNDATION_EXTERN NSString * const kDIEAnimeEpisodeUpdateNotif;

@@ -30,4 +30,5 @@
 + (NSDictionary *)fullParams:(NSDictionary *)params;
 + (NSString *)categoryApi;
 + (NSString *)animeApiWithCategoryId:(NSString *)categotyId;
++ (NSString *)animeEpisodeApiWithAnimeId:(NSString *)animeId andEpisodeId:(NSInteger)episodeId;
 @end

@@ -41,4 +41,18 @@
     }];
 
 }
+
++ (void)animeEpisodeWithAnimeId:(NSString *)animeId withEpisodeId:(NSInteger)episodeId completion:(CompletionType)completion
+{
+    NSDictionary *params = [DIEToolkit fullParams:@{}];
+
+    [[AFHTTPSessionManager manager] GET:[DIEToolkit animeEpisodeApiWithAnimeId:animeId andEpisodeId:episodeId] parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+
+        completion(responseObject, nil);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        DIEError *err = [[DIEError alloc] initWithError:error];
+        completion(nil, err);
+    }];
+
+}
 @end

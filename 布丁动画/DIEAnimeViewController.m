@@ -11,6 +11,7 @@
 #import "DIEDataManager.h"
 #import "UIImageView+WebCache.h"
 #import "DIENotificationConfig.h"
+#import "DIEAnimeDetailViewController.h"
 @interface DIEAnimeViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *_tableView;
@@ -34,7 +35,7 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
 
-    DIEAddObserver(self, @selector(animeUpdated:), KDIEAnimeUpdateNotif, nil);
+    DIEAddObserver(self, @selector(animeUpdated:), kDIEAnimeUpdateNotif, nil);
     [[DIEDataManager sharedManager] updateAnimeWithCategoryId:_categoryId];
 
 
@@ -82,6 +83,15 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 100;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DIEAnimeModel *animeModel = [DIEDataManager sharedManager].animeArray[indexPath.row];
+    DIEAnimeDetailViewController *detailViewController = [DIEAnimeDetailViewController new];
+    detailViewController.animeModel = animeModel;
+    detailViewController.title = @"动画详情";
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 @end

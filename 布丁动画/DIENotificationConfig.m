@@ -9,4 +9,5 @@
 #import "DIENotificationConfig.h"
 
 NSString * const kDIECategoryUpdateNotif = @"kDIECategoryUpdateNotif";
-NSString * const KDIEAnimeUpdateNotif = @"KDIEAnimeUpdateNotif";
+NSString * const kDIEAnimeUpdateNotif = @"kDIEAnimeUpdateNotif";
+NSString * const kDIEAnimeEpisodeUpdateNotif = @"kDIEAnimeEpisodeUpdateNotif";
