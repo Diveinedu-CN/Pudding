@@ -71,7 +71,7 @@ const static CGFloat kMinimumLineSpacing = 0.f;
             number = [[DIEDataManager sharedManager].categoriesArray count];
             break;
         default:
-            number = 4;
+            number = 0;
             break;
     }
     return number;

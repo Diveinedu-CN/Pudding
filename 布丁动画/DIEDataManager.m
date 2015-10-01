@@ -44,6 +44,7 @@ static DIEDataManager *instnce;
         [_categoriesArray removeAllObjects];
         [_categoriesArray addObjectsFromArray:array];
         _categoryOffset = 0;
+        DIEPost(kDIECategoryUpdateNotif, nil);
     }];
 }
 - (void)loadMoreCategory
@@ -52,6 +53,7 @@ static DIEDataManager *instnce;
         NSArray *array = [self parseCategoryData:responseObject];
         [_categoriesArray addObjectsFromArray:array];
         _categoryOffset+=[array count];
+        DIEPost(kDIECategoryUpdateNotif, nil);
     }];
 }
 
