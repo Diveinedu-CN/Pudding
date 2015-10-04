@@ -55,4 +55,16 @@
     }];
 
 }
++ (void)animeVideoWitdVideoId:(NSString *)videoId withQuality:(NSInteger)quality completion:(CompletionType)completion
+{
+    NSDictionary *params = [DIEToolkit fullParams:@{@"deviceType":@1001,@"quality":@(quality),@"sectionNumber":@0}];
+
+    [[AFHTTPSessionManager manager] GET:[DIEToolkit animeVideoApiWithVideoId:videoId] parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+
+        completion(responseObject, nil);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        DIEError *err = [[DIEError alloc] initWithError:error];
+        completion(nil, err);
+    }];
+}
 @end

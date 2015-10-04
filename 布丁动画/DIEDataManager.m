@@ -107,6 +107,26 @@ static DIEDataManager *instnce;
     }
     return episodeModel;
 }
+
+
+- (void)updateAnimeVideoWithVideoId:(NSString *)videoId andQuality:(DIEQualityType)quality
+{
+    [DIENetworkManager animeVideoWitdVideoId:videoId withQuality:quality completion:^(id responseObject, DIEError *error) {
+        DIEVideoInfoModel *videoInfoModel;
+        videoInfoModel = [self parseVideoInfoData:responseObject];
+        DIEPost(kDIEVideoInfoUpdateNotif, videoInfoModel);
+    }];
+}
+
+- (DIEVideoInfoModel *)parseVideoInfoData:(id)videoInfoData
+{
+    DIEVideoInfoModel *videoInfoModel;
+    if ([videoInfoData isKindOfClass:[NSDictionary class]]) {
+        videoInfoModel = [DIEVideoInfoModel modelFromJSONDictionary:videoInfoData];
+    }
+    return videoInfoModel;
+
+}
 @end
 
 

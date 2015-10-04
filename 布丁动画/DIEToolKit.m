@@ -58,4 +58,9 @@
     NSString *animeEpisodePath = [NSString stringWithFormat:kDIEAnimeEpisodeApi, animeId, episodeId];
     return [self apiWithPath:animeEpisodePath];
 }
++ (NSString *)animeVideoApiWithVideoId:(NSString *)videoId
+{
+    NSString *animeVideoPath = [NSString stringWithFormat:kDIEAnimeVideoApi,videoId];
+    return [self apiWithPath:animeVideoPath];
+}
 @end

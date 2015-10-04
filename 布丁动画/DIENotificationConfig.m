@@ -11,3 +11,4 @@
 NSString * const kDIECategoryUpdateNotif = @"kDIECategoryUpdateNotif";
 NSString * const kDIEAnimeUpdateNotif = @"kDIEAnimeUpdateNotif";
 NSString * const kDIEAnimeEpisodeUpdateNotif = @"kDIEAnimeEpisodeUpdateNotif";
+NSString * const kDIEVideoInfoUpdateNotif = @"kDIEVideoInfoUpdateNotif";

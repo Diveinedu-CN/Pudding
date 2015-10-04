@@ -7,6 +7,7 @@
 //
 
 #import "DIEAnimeEpisodeViewController.h"
+#import "DIEAnimePlayerViewController.h"
 #import "DIENotificationConfig.h"
 #import "DIEDataManager.h"
 #import "DIEVideoModel.h"
@@ -99,5 +100,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DIEVideoModel *model = _episodeModel.videos[indexPath.row];
+    NSString *videoId = model.videoId;
+    DIEAnimePlayerViewController *playerViewController = [DIEAnimePlayerViewController new];
+    playerViewController.videoId = videoId;
+    playerViewController.videoTitle = [NSString stringWithFormat:@"%@ EP %ld",_episodeModel.animeName, _episodeId];
+    [self presentViewController:playerViewController animated:YES completion:nil];
 }
 @end

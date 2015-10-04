@@ -610,6 +610,12 @@
 		186482C21BBD34600003CF60 /* DIEEpisodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482C11BBD34600003CF60 /* DIEEpisodeModel.m */; settings = {ASSET_TAGS = (); }; };
 		186482C51BBD35080003CF60 /* DIEVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482C41BBD35080003CF60 /* DIEVideoModel.m */; settings = {ASSET_TAGS = (); }; };
 		186482C81BBD53260003CF60 /* DIEAnimeEpisodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482C71BBD53260003CF60 /* DIEAnimeEpisodeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		186482CB1BBE12990003CF60 /* DIEAnimePlayerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 186482CA1BBE12990003CF60 /* DIEAnimePlayerViewController.mm */; settings = {ASSET_TAGS = (); }; };
+		186482CD1BBE2F080003CF60 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186482CC1BBE2F080003CF60 /* AVKit.framework */; };
+		186482DF1BBE73ED0003CF60 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 186482DE1BBE73ED0003CF60 /* libiconv.tbd */; };
+		186482E31BBE74500003CF60 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186482E21BBE74500003CF60 /* AudioToolbox.framework */; };
+		186482E61BC00E060003CF60 /* DIEVideoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186482E51BC00E060003CF60 /* DIEVideoInfoModel.m */; settings = {ASSET_TAGS = (); }; };
+		186482E81BC121C20003CF60 /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186482E71BC121C20003CF60 /* MobileVLCKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1328,6 +1334,14 @@
 		186482C41BBD35080003CF60 /* DIEVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEVideoModel.m; sourceTree = "<group>"; };
 		186482C61BBD53260003CF60 /* DIEAnimeEpisodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEAnimeEpisodeViewController.h; sourceTree = "<group>"; };
 		186482C71BBD53260003CF60 /* DIEAnimeEpisodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEAnimeEpisodeViewController.m; sourceTree = "<group>"; };
+		186482C91BBE12990003CF60 /* DIEAnimePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEAnimePlayerViewController.h; sourceTree = "<group>"; };
+		186482CA1BBE12990003CF60 /* DIEAnimePlayerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DIEAnimePlayerViewController.mm; sourceTree = "<group>"; };
+		186482CC1BBE2F080003CF60 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		186482DE1BBE73ED0003CF60 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		186482E21BBE74500003CF60 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		186482E41BC00E060003CF60 /* DIEVideoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIEVideoInfoModel.h; sourceTree = "<group>"; };
+		186482E51BC00E060003CF60 /* DIEVideoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIEVideoInfoModel.m; sourceTree = "<group>"; };
+		186482E71BC121C20003CF60 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = Framework/MobileVLCKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1335,6 +1349,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186482E81BC121C20003CF60 /* MobileVLCKit.framework in Frameworks */,
+				186482E31BBE74500003CF60 /* AudioToolbox.framework in Frameworks */,
+				186482DF1BBE73ED0003CF60 /* libiconv.tbd in Frameworks */,
+				186482CD1BBE2F080003CF60 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1378,6 +1396,7 @@
 		181E542C1BAFE41D0069DA1D /* 布丁动画 */ = {
 			isa = PBXGroup;
 			children = (
+				186482E91BC1221B0003CF60 /* Framework */,
 				186482A11BBB7F300003CF60 /* Manager */,
 				186482911BBB75990003CF60 /* Utils */,
 				181E5A1A1BBA29B40069DA1D /* Model */,
@@ -1437,6 +1456,8 @@
 				186482BE1BBD237D0003CF60 /* DIEAnimeDetailViewController.m */,
 				186482C61BBD53260003CF60 /* DIEAnimeEpisodeViewController.h */,
 				186482C71BBD53260003CF60 /* DIEAnimeEpisodeViewController.m */,
+				186482C91BBE12990003CF60 /* DIEAnimePlayerViewController.h */,
+				186482CA1BBE12990003CF60 /* DIEAnimePlayerViewController.mm */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -2104,6 +2125,8 @@
 				186482C11BBD34600003CF60 /* DIEEpisodeModel.m */,
 				186482C31BBD35080003CF60 /* DIEVideoModel.h */,
 				186482C41BBD35080003CF60 /* DIEVideoModel.m */,
+				186482E41BC00E060003CF60 /* DIEVideoInfoModel.h */,
+				186482E51BC00E060003CF60 /* DIEVideoInfoModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2209,6 +2232,17 @@
 				186482A61BBB7F5E0003CF60 /* DIENetworkManager.m */,
 			);
 			name = Manager;
+			sourceTree = "<group>";
+		};
+		186482E91BC1221B0003CF60 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				186482DE1BBE73ED0003CF60 /* libiconv.tbd */,
+				186482CC1BBE2F080003CF60 /* AVKit.framework */,
+				186482E21BBE74500003CF60 /* AudioToolbox.framework */,
+				186482E71BC121C20003CF60 /* MobileVLCKit.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2886,6 +2920,7 @@
 				181E54751BAFE7D60069DA1D /* UIViewController+MMDrawerController.m in Sources */,
 				181E5A171BB97D130069DA1D /* DIECategoryViewController.m in Sources */,
 				181E5A0E1BB97C600069DA1D /* UIImageView+WebCache.m in Sources */,
+				186482E61BC00E060003CF60 /* DIEVideoInfoModel.m in Sources */,
 				181E5A531BBA39770069DA1D /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
 				181E59681BB977CE0069DA1D /* MASViewAttribute.m in Sources */,
 				186482C51BBD35080003CF60 /* DIEVideoModel.m in Sources */,
@@ -2909,6 +2944,7 @@
 				181E5A4A1BBA39770069DA1D /* MTLReflection.m in Sources */,
 				181E596A1BB977CE0069DA1D /* NSArray+MASAdditions.m in Sources */,
 				181E5A1D1BBA2A690069DA1D /* DIECategoryModel.m in Sources */,
+				186482CB1BBE12990003CF60 /* DIEAnimePlayerViewController.mm in Sources */,
 				181E58821BAFFB180069DA1D /* LeftTableViewCell.m in Sources */,
 				186482BC1BBCD99C0003CF60 /* DIEAnimeViewController.m in Sources */,
 				1864829F1BBB769F0003CF60 /* DIENotificationConfig.m in Sources */,
@@ -3069,6 +3105,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/布丁动画/Library",
+					"$(PROJECT_DIR)/布丁动画/Framework",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/布丁动画/Library";
 				INFOPLIST_FILE = "布丁动画/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3081,6 +3123,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/布丁动画/Library",
+					"$(PROJECT_DIR)/布丁动画/Framework",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/布丁动画/Library";
 				INFOPLIST_FILE = "布丁动画/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -15,4 +15,5 @@ typedef void(^CompletionType)(id responseObject, DIEError *error);
 + (void)categoryWithOffset:(NSInteger)offset limit:(NSInteger)limit completion:(CompletionType)completion;
 + (void)animeWithCategoryId:(NSString *)categoryId withLimit:(NSInteger)limit completion:(CompletionType)completion;
 + (void)animeEpisodeWithAnimeId:(NSString *)categoryId withEpisodeId:(NSInteger)episodeId completion:(CompletionType)completion;
++ (void)animeVideoWitdVideoId:(NSString *)videoId withQuality:(NSInteger)quality completion:(CompletionType)completion;
 @end

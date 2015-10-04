@@ -17,3 +17,4 @@
 FOUNDATION_EXTERN NSString * const kDIECategoryUpdateNotif;
 FOUNDATION_EXTERN NSString * const kDIEAnimeUpdateNotif;
 FOUNDATION_EXTERN NSString * const kDIEAnimeEpisodeUpdateNotif;
+FOUNDATION_EXTERN NSString * const kDIEVideoInfoUpdateNotif;
